@@ -3,108 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmaya Rout - Data Analyst Portfolio</title>
-    <meta name="description" content="Chinmaya Rout – Professional Data Analyst | ML & Cloud Enthusiast">
+    <title>Chinmaya Rout | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="card">
-            <img src="assets/profile.jpg" alt="Chinmaya Rout">
-            <h1>Chinmaya Rout</h1>
-            <p>Data Analyst | ML & Cloud Enthusiast<br>Hyderabad, India | <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
-        </div>
-    </section>
+<!-- Header / Hero Section -->
+<header class="hero">
+    <div class="container">
+        <img src="assets/profile.jpg" alt="Chinmaya Rout" class="profile-img">
+        <h1>Chinmaya Rout</h1>
+        <p>Data Analyst | ML & Cloud Enthusiast</p>
+        <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </div>
+</header>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Data Analyst | Wipro Technologies</h3>
-            <span>Jan 2022 – Present</span>
-            <ul>
-                <li>Automated data workflows using Python, SQL, and Snowflake.</li>
-                <li>Built interactive dashboards in Power BI and Tableau.</li>
-                <li>Conducted A/B testing, Excel modeling, and predictive analytics.</li>
-                <li>Enhanced data governance and reporting accuracy across projects.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Fraud Risk Analyst | Tech Mahindra</h3>
-            <span>May 2021 – Dec 2021</span>
-            <ul>
-                <li>Technical support for Amazon fraud detection operations.</li>
-                <li>Developed automation tools and mentored junior analysts.</li>
-            </ul>
-        </div>
-    </section>
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container box">
+        <h2>About Me</h2>
+        <p>I am a Data Analyst with 4.5 years of experience in analytics, cloud technologies, and machine learning. I specialize in translating business problems into data solutions and delivering actionable insights.</p>
+        <img src="assets/about-image.jpg" alt="About Me" class="section-img">
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
         <h2>Projects</h2>
-        <div class="card">
+        <div class="project-box">
+            <div class="project-content">
+                <h3>Project 1: Wine Quality Analysis</h3>
+                <p>Analyzed red and white wine datasets to predict quality scores using ML models.</p>
+                <span class="tech">Python, Pandas, Scikit-learn, Power BI</span>
+            </div>
             <img src="assets/project1.png" alt="Project 1">
-            <h3>E-Commerce Customer Retention Analytics</h3>
-            <p>Built ETL pipelines and demand-forecasting models, delivering dashboards that increased retention by 15%.</p>
         </div>
-        <div class="card">
+
+        <div class="project-box">
+            <div class="project-content">
+                <h3>Project 2: Sales Dashboard</h3>
+                <p>Created interactive dashboards to track cumulative sales and trends for business decision-making.</p>
+                <span class="tech">Power BI, SQL, Excel</span>
+            </div>
             <img src="assets/project2.png" alt="Project 2">
-            <h3>Healthcare Readmission Analysis</h3>
-            <p>Cleaned and analyzed patient admission data, developed predictive models and interactive dashboards.</p>
         </div>
-        <div class="card">
+
+        <div class="project-box">
+            <div class="project-content">
+                <h3>Project 3: Customer Behavior Analysis</h3>
+                <p>Analyzed e-commerce data to understand customer churn and optimize retention strategies.</p>
+                <span class="tech">Python, SQL, Tableau</span>
+            </div>
             <img src="assets/project3.png" alt="Project 3">
-            <h3>Financial Credit Risk Scoring</h3>
-            <p>Processed and modeled loan datasets using Python, building risk dashboards that improved approval accuracy by 12%.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>R</span>
-            <span>Power BI</span>
-            <span>Tableau</span>
-            <span>Machine Learning</span>
-            <span>Azure</span>
-            <span>Snowflake</span>
-            <span>Hadoop</span>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download class="btn">Download My Resume</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container box">
         <h2>Contact</h2>
-        <div class="card">
-            <p>Email: <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190/">linkedin.com/in/chinmaya-rout</a></p>
-            <p>GitHub: <a href="https://github.com/ckr-art">github.com/ckr-art</a></p>
-        </div>
-    </section>
+        <p>Email: <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190/" target="_blank">linkedin.com/in/chinmaya-rout</a></p>
+        <p>GitHub: <a href="https://github.com/ckr-art" target="_blank">github.com/ckr-art</a></p>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
