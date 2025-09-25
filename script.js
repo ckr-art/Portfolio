@@ -1,18 +1,18 @@
-// Smooth scroll is already handled by CSS scroll-behavior
-// Additional JS can be used for animation (fade-in effect)
+// Smooth fade-in for sections
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section, .project-box, .box');
+    const options = { threshold: 0.1 };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, options);
 
-const cards = document.querySelectorAll('.card');
-
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const rect = card.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 100){
-            card.style.opacity = 1;
-            card.style.transform = 'translateY(0)';
-            card.style.transition = 'all 0.6s ease';
-        } else {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(50px)';
-        }
+    sections.forEach(section => {
+        section.classList.add('hidden');
+        observer.observe(section);
     });
 });
