@@ -1,56 +1,102 @@
-:root{
-  --bg:#0b0f14;
-  --panel:#0f1720;
-  --muted:#9aa7b2;
-  --accent:#58a6ff;
-  --glass: rgba(255,255,255,0.04);
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
 }
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: radial-gradient(1200px 600px at 10% 10%, rgba(88,166,255,0.06), transparent), var(--bg);
-  color:#e6eef3;
-  -webkit-font-smoothing:antialiased;
+h1, h2, h3 {
+    color: #00e0ff;
 }
 
-.container{max-width:1000px;margin:0 auto;padding:28px}
+a {
+    color: #00e0ff;
+    text-decoration: none;
+}
 
-.site-header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1a1a1a;
+    padding: 10px 0;
+    z-index: 100;
+    text-align: center;
+}
 
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#c084fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#061026}
-.brand h1{font-size:18px;margin:0}
-.subtitle{font-size:12px;color:var(--muted);margin-top:4px}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
 
-.nav-links{list-style:none;display:flex;gap:18px;margin:0;padding:0}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:14px}
-.nav-links a:hover{color:var(--accent)}
+nav ul li {
+    margin: 0 15px;
+}
 
-.hero{padding:80px 0;text-align:center}
-.hero h2{font-size:36px;margin-bottom:8px}
-.hero span{color:var(--accent)}
-.lead{color:var(--muted);max-width:760px;margin:0 auto}
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#061026;text-decoration:none;font-weight:600;margin:10px 8px}
-.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+/* Sections */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
 
-.about, .experience, .projects, .contact{padding:40px 0;border-top:1px solid rgba(255,255,255,0.02)}
+.card {
+    background-color: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
 
-.exp-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:10px;margin-bottom:12px}
-.exp-card h3{margin:0}
-.exp-card .muted{color:var(--muted);font-size:13px}
+.card img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
-.project{background:var(--panel);padding:14px;border-radius:10px;transition:transform .2s ease;box-shadow: 0 6px 18px rgba(2,6,23,0.6)}
-.project img{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px;background:linear-gradient(90deg,#0f1720,#0b1220)}
-.project h3{margin:0 0 6px 0}
-.project .meta{color:var(--muted);font-size:13px;margin-top:8px}
+.skills-container span {
+    background-color: #00e0ff33;
+    color: #00e0ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
 
-.site-footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00e0ff;
+    color: #121212;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
 
-/* responsive */
-@media(max-width:700px){.nav-links{display:none}.hero h2{font-size:26px}.container{padding:18px}}
+.btn:hover {
+    background-color: #00b8cc;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
