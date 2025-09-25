@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chinmaya Rout — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinmaya Rout - Data Analyst Portfolio</title>
+    <meta name="description" content="Chinmaya Rout – Professional Data Analyst | ML & Cloud Enthusiast">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <div class="brand">
-        <div class="logo">CR</div>
-        <div>
-          <h1>Chinmaya Rout</h1>
-          <p class="subtitle">Data Analyst | ML & Cloud Enthusiast — 4.5 years experience</p>
-        </div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main class="container">
-    <section id="home" class="hero">
-      <h2>Hello — I'm <span>Chinmaya Rout</span></h2>
-      <p class="lead">I turn data into insights and production-ready solutions. I build dashboards, data pipelines and ML models to solve business problems.</p>
-      <div class="cta">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn outline" href="resume.pdf" download>Download Resume</a>
-      </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="card">
+            <img src="assets/profile.jpg" alt="Chinmaya Rout">
+            <h1>Chinmaya Rout</h1>
+            <p>Data Analyst | ML & Cloud Enthusiast<br>Hyderabad, India | <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+        </div>
     </section>
 
-    <section id="about" class="about">
-      <h2>About</h2>
-      <p>I'm a Data Analyst with 4.5 years of professional experience working across analytics, reporting, and machine learning. I specialize in Power BI dashboards, SQL-based analytics, Python for data science, and cloud data pipelines (Azure & Snowflake).</p>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>Data Analyst | Wipro Technologies</h3>
+            <span>Jan 2022 – Present</span>
+            <ul>
+                <li>Automated data workflows using Python, SQL, and Snowflake.</li>
+                <li>Built interactive dashboards in Power BI and Tableau.</li>
+                <li>Conducted A/B testing, Excel modeling, and predictive analytics.</li>
+                <li>Enhanced data governance and reporting accuracy across projects.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Fraud Risk Analyst | Tech Mahindra</h3>
+            <span>May 2021 – Dec 2021</span>
+            <ul>
+                <li>Technical support for Amazon fraud detection operations.</li>
+                <li>Developed automation tools and mentored junior analysts.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="experience" class="experience">
-      <h2>Experience</h2>
-      <div class="exp-card">
-        <h3>Associate Data Analyst</h3>
-        <p class="muted">2021 — Present</p>
-        <ul>
-          <li>Delivered automated reporting and promotion ingestion systems for trade planning.</li>
-          <li>Built Power BI dashboards to support demand & trade planning decisions.</li>
-          <li>Collaborated with cross-functional teams to productionize analytics workflows.</li>
-        </ul>
-      </div>
-      <div class="exp-card">
-        <h3>Data Analyst Intern</h3>
-        <p class="muted">2020 — 2021</p>
-        <ul>
-          <li>Developed ETL scripts and performed data cleaning for analytics projects.</li>
-          <li>Supported ad-hoc analysis and dashboard requirements.</li>
-        </ul>
-      </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <img src="assets/project1.png" alt="Project 1">
+            <h3>E-Commerce Customer Retention Analytics</h3>
+            <p>Built ETL pipelines and demand-forecasting models, delivering dashboards that increased retention by 15%.</p>
+        </div>
+        <div class="card">
+            <img src="assets/project2.png" alt="Project 2">
+            <h3>Healthcare Readmission Analysis</h3>
+            <p>Cleaned and analyzed patient admission data, developed predictive models and interactive dashboards.</p>
+        </div>
+        <div class="card">
+            <img src="assets/project3.png" alt="Project 3">
+            <h3>Financial Credit Risk Scoring</h3>
+            <p>Processed and modeled loan datasets using Python, building risk dashboards that improved approval accuracy by 12%.</p>
+        </div>
     </section>
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="project">
-          <img src="assets/project1.png" alt="Wine Quality">
-          <h3>Wine Quality Analysis</h3>
-          <p>Built predictive models to classify wine quality and explain feature importance.</p>
-          <p class="meta">Python · Pandas · scikit-learn · Power BI</p>
-          <p><a href="https://github.com/ckr-art/wine-quality" target="_blank">View Code</a></p>
-        </article>
-
-        <article class="project">
-          <img src="assets/project2.png" alt="Sales Dashboard">
-          <h3>Retail Sales Dashboard</h3>
-          <p>Interactive dashboard tracking monthly revenue, promo impact and regional KPIs.</p>
-          <p class="meta">Power BI · SQL · Excel</p>
-        </article>
-
-        <article class="project">
-          <img src="assets/project3.png" alt="Churn">
-          <h3>Customer Churn Prediction</h3>
-          <p>Model to predict customer churn and provide actionable retention insights.</p>
-          <p class="meta">Python · Azure ML · Snowflake</p>
-        </article>
-      </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>R</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+            <span>Machine Learning</span>
+            <span>Azure</span>
+            <span>Snowflake</span>
+            <span>Hadoop</span>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190" target="_blank">linkedin.com/in/chinmaya-rout-9a1a12190</a></p>
-      <p>GitHub: <a href="https://github.com/ckr-art" target="_blank">github.com/ckr-art</a></p>
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download class="btn">Download My Resume</a>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Chinmaya Rout — Built with care</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190/">linkedin.com/in/chinmaya-rout</a></p>
+            <p>GitHub: <a href="https://github.com/ckr-art">github.com/ckr-art</a></p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
