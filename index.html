@@ -1,76 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmaya Rout | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Chinmaya Rout — Data Analyst</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Chinmaya Rout — Data Analyst. Portfolio showcasing projects, skills, and experience." />
 </head>
 <body>
+<div class="page">
+<nav class="nav">
+<div class="brand">Chinmaya Rout</div>
+<div class="nav-actions">
+<button id="theme-toggle" aria-label="Toggle theme">🌗</button>
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn ghost" href="#" id="download-resume">Download Resume</a>
+</div>
+</nav>
 
-<!-- Header / Hero Section -->
-<header class="hero">
-    <div class="container">
-        <img src="assets/profile.jpg" alt="Chinmaya Rout" class="profile-img">
-        <h1>Chinmaya Rout</h1>
-        <p>Data Analyst | ML & Cloud Enthusiast</p>
-        <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-    </div>
+
+<header class="hero" id="home">
+<div class="hero-inner">
+<div class="hero-photo" aria-hidden="true">
+<img src="assets/profile-placeholder.png" alt="Chinmaya Rout — profile" />
+</div>
+<div class="hero-copy">
+<h1 class="headline">I turn messy data into clear decisions.</h1>
+<p class="subhead">3+ years experienced Data Analyst specializing in <strong>Python</strong>, <strong>SQL</strong>, and <strong>Power BI</strong>.</p>
+<div class="hero-ctas">
+<a class="cta" href="#projects">View Projects</a>
+<a class="cta ghost" href="#contact">Contact Me</a>
+</div>
+<p class="contact-inline">Hyderabad, India • <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a> • 6372774342 • <a href="#">LinkedIn</a></p>
+</div>
+</div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="section">
-    <div class="container box">
-        <h2>About Me</h2>
-        <p>I am a Data Analyst with 4.5 years of experience in analytics, cloud technologies, and machine learning. I specialize in translating business problems into data solutions and delivering actionable insights.</p>
-        <img src="assets/about-image.jpg" alt="About Me" class="section-img">
-    </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects" class="section">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project-box">
-            <div class="project-content">
-                <h3>Project 1: Wine Quality Analysis</h3>
-                <p>Analyzed red and white wine datasets to predict quality scores using ML models.</p>
-                <span class="tech">Python, Pandas, Scikit-learn, Power BI</span>
-            </div>
-            <img src="assets/project1.png" alt="Project 1">
-        </div>
+<main>
+<section id="skills" class="section card-grid">
+<h2 class="section-title">Skills &amp; Tech Stack</h2>
+<div class="grid">
+<div class="skill-card">
+<h3>Languages</h3>
+<ul class="skill-list">
+<li>Python <span class="pill">95%</span><div class="bar" data-value="95"></div></li>
+<li>JavaScript <span class="pill">80%</span><div class="bar" data-value="80"></div></li>
+<li>SQL <span class="pill">90%</span><div class="bar" data-value="90"></div></li>
+<li>Go <span class="pill">55%</span><div class="bar" data-value="55"></div></li>
+</ul>
+</div>
 
-        <div class="project-box">
-            <div class="project-content">
-                <h3>Project 2: Sales Dashboard</h3>
-                <p>Created interactive dashboards to track cumulative sales and trends for business decision-making.</p>
-                <span class="tech">Power BI, SQL, Excel</span>
-            </div>
-            <img src="assets/project2.png" alt="Project 2">
-        </div>
 
-        <div class="project-box">
-            <div class="project-content">
-                <h3>Project 3: Customer Behavior Analysis</h3>
-                <p>Analyzed e-commerce data to understand customer churn and optimize retention strategies.</p>
-                <span class="tech">Python, SQL, Tableau</span>
-            </div>
-            <img src="assets/project3.png" alt="Project 3">
-        </div>
-    </div>
-</section>
+<div class="skill-card">
+<h3>Frameworks &amp; Libraries</h3>
+<ul class="skill-list">
+<li>React <span class="pill">70%</span><div class="bar" data-value="70"></div></li>
+<li>Django <span class="pill">60%</span><div class="bar" data-value="60"></div></li>
+<li>TensorFlow <span class="pill">45%</span><div class="bar" data-value="45"></div></li>
+</ul>
+</div>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="container box">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190/" target="_blank">linkedin.com/in/chinmaya-rout</a></p>
-        <p>GitHub: <a href="https://github.com/ckr-art" target="_blank">github.com/ckr-art</a></p>
-    </div>
-</section>
 
-<script src="script.js"></script>
-</body>
+<div class="skill-card">
+<h3>Cloud &amp; DevOps</h3>
+<ul class="skill-list">
+<li>AWS <span class="pill">65%</span><div class="bar" data-value="65"></div></li>
+<li>Docker <span class="pill">75%</span><div class="bar" data-value="75"></div></li>
+<li>Kubernetes <span class="pill">40%</span><div class="bar" data-value="40"></div></li>
+</ul>
 </html>
