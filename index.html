@@ -1,72 +1,237 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Chinmaya Rout — Data Analyst</title>
-<link rel="stylesheet" href="styles.css">
-<meta name="description" content="Chinmaya Rout — Data Analyst. Portfolio showcasing projects, skills, and experience." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chinmaya Rout — Data Analyst</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Chinmaya Rout — Data Analyst. Portfolio showcasing projects, skills, and experience." />
 </head>
 <body>
-<div class="page">
-<nav class="nav">
-<div class="brand">Chinmaya Rout</div>
-<div class="nav-actions">
-<button id="theme-toggle" aria-label="Toggle theme">🌗</button>
-<a class="btn" href="#projects">View Projects</a>
-<a class="btn ghost" href="#" id="download-resume">Download Resume</a>
-</div>
-</nav>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">CR</div>
+        <div class="name">Chinmaya Rout</div>
+      </div>
 
+      <div class="actions">
+        <button id="theme-toggle" class="icon" aria-label="Toggle theme">🌗</button>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#" id="download-resume" class="btn ghost">Download Resume</a>
+      </div>
+    </nav>
 
-<header class="hero" id="home">
-<div class="hero-inner">
-<div class="hero-photo" aria-hidden="true">
-<img src="assets/profile-placeholder.png" alt="Chinmaya Rout — profile" />
-</div>
-<div class="hero-copy">
-<h1 class="headline">I turn messy data into clear decisions.</h1>
-<p class="subhead">3+ years experienced Data Analyst specializing in <strong>Python</strong>, <strong>SQL</strong>, and <strong>Power BI</strong>.</p>
-<div class="hero-ctas">
-<a class="cta" href="#projects">View Projects</a>
-<a class="cta ghost" href="#contact">Contact Me</a>
-</div>
-<p class="contact-inline">Hyderabad, India • <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a> • 6372774342 • <a href="#">LinkedIn</a></p>
-</div>
-</div>
-</header>
+    <header class="hero" id="home">
+      <div class="hero-inner card-gradient">
+        <div class="hero-photo">
+          <img src="assets/profile-placeholder.png" alt="Chinmaya Rout" />
+        </div>
 
+        <div class="hero-copy">
+          <h1 class="headline">I turn messy data into clear decisions.</h1>
+          <p class="subhead">3+ years experienced Data Analyst — <strong>Python</strong>, <strong>SQL</strong>, <strong>Power BI</strong></p>
+          <div class="ctas">
+            <a href="#projects" class="cta">View Projects</a>
+            <a href="#contact" class="cta ghost">Contact</a>
+          </div>
+          <p class="meta">Hyderabad, India • <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a> • 6372774342 • <a href="#">LinkedIn</a></p>
+        </div>
+      </div>
+    </header>
 
-<main>
-<section id="skills" class="section card-grid">
-<h2 class="section-title">Skills &amp; Tech Stack</h2>
-<div class="grid">
-<div class="skill-card">
-<h3>Languages</h3>
-<ul class="skill-list">
-<li>Python <span class="pill">95%</span><div class="bar" data-value="95"></div></li>
-<li>JavaScript <span class="pill">80%</span><div class="bar" data-value="80"></div></li>
-<li>SQL <span class="pill">90%</span><div class="bar" data-value="90"></div></li>
-<li>Go <span class="pill">55%</span><div class="bar" data-value="55"></div></li>
-</ul>
-</div>
+    <main>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills &amp; Tech Stack</h2>
+        <div class="grid">
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Languages</h3>
+              <ul class="score-list">
+                <li>Python <span class="score">95%</span>
+                  <div class="bar" data-value="95"><div class="fill"></div></div>
+                </li>
+                <li>JavaScript <span class="score">80%</span>
+                  <div class="bar" data-value="80"><div class="fill"></div></div>
+                </li>
+                <li>SQL <span class="score">90%</span>
+                  <div class="bar" data-value="90"><div class="fill"></div></div>
+                </li>
+                <li>Go <span class="score">55%</span>
+                  <div class="bar" data-value="55"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Frameworks & Libraries</h3>
+              <ul class="score-list">
+                <li>React <span class="score">70%</span>
+                  <div class="bar" data-value="70"><div class="fill"></div></div>
+                </li>
+                <li>Django <span class="score">60%</span>
+                  <div class="bar" data-value="60"><div class="fill"></div></div>
+                </li>
+                <li>TensorFlow <span class="score">45%</span>
+                  <div class="bar" data-value="45"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<div class="skill-card">
-<h3>Frameworks &amp; Libraries</h3>
-<ul class="skill-list">
-<li>React <span class="pill">70%</span><div class="bar" data-value="70"></div></li>
-<li>Django <span class="pill">60%</span><div class="bar" data-value="60"></div></li>
-<li>TensorFlow <span class="pill">45%</span><div class="bar" data-value="45"></div></li>
-</ul>
-</div>
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Cloud & DevOps</h3>
+              <ul class="score-list">
+                <li>AWS <span class="score">65%</span>
+                  <div class="bar" data-value="65"><div class="fill"></div></div>
+                </li>
+                <li>Docker <span class="score">75%</span>
+                  <div class="bar" data-value="75"><div class="fill"></div></div>
+                </li>
+                <li>Kubernetes <span class="score">40%</span>
+                  <div class="bar" data-value="40"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Tools</h3>
+              <ul class="score-list">
+                <li>Git <span class="score">90%</span>
+                  <div class="bar" data-value="90"><div class="fill"></div></div>
+                </li>
+                <li>VS Code <span class="score">95%</span>
+                  <div class="bar" data-value="95"><div class="fill"></div></div>
+                </li>
+                <li>Figma <span class="score">50%</span>
+                  <div class="bar" data-value="50"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="skill-card">
-<h3>Cloud &amp; DevOps</h3>
-<ul class="skill-list">
-<li>AWS <span class="pill">65%</span><div class="bar" data-value="65"></div></li>
-<li>Docker <span class="pill">75%</span><div class="bar" data-value="75"></div></li>
-<li>Kubernetes <span class="pill">40%</span><div class="bar" data-value="40"></div></li>
-</ul>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item card-gradient">
+            <div class="panel-inner">
+              <div class="meta">Jan 2022 — Present</div>
+              <h3>Data Analyst — Current Company</h3>
+              <ul>
+                <li>Engineered ETL pipelines to automate 10+ daily feeds — cut prep time by 70%.</li>
+                <li>Built Power BI dashboards for cross-functional KPIs and operational reporting.</li>
+                <li>Optimized SQL and created aggregated tables to speed up reporting.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item card-gradient">
+            <div class="panel-inner">
+              <div class="meta">Jul 2019 — Dec 2021</div>
+              <h3>Junior Data Analyst — Previous Company</h3>
+              <ul>
+                <li>Implemented validation checks to detect pipeline issues (12% fewer errors).</li>
+                <li>Translated business problems into dashboards and SQL pipelines.</li>
+                <li>Automated weekly reports using Python and scheduler jobs.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+              <h4>Sales Forecasting Pipeline</h4>
+              <p>End-to-end time-series forecasting with automated feature engineering, periodic refresh pipelines and Power BI integration for planners.</p>
+              <a class="link" href="#">Read case study →</a>
+            </div>
+          </div>
+
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>Python</span><span>Pandas</span><span>Docker</span></div>
+              <h4>Customer Churn Analysis</h4>
+              <p>Cohort analysis and classifier to prioritize retention campaigns; exported lists for targeted outreach.</p>
+              <a class="link" href="#">Read case study →</a>
+            </div>
+          </div>
+
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>ETL</span><span>Airflow</span><span>AWS</span></div>
+              <h4>Data Lake Onboarding</h4>
+              <p>Onboarded 3 business sources into centralized lake with schema registry and monitoring alerts for failures.</p>
+              <a class="link" href="#">Read case study →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <p>Hi — I'm <strong>Chinmaya Rout</strong>, a data analyst passionate about building reproducible pipelines, designing insightful dashboards, and solving business problems with data. I prefer pragmatic, maintainable solutions that scale.</p>
+            </div>
+          </div>
+
+          <div class="panel card-gradient">
+            <div class="panel-inner centered">
+              <img class="profile-sm" src="assets/profile-placeholder.png" alt="Chinmaya">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form class="contact-form panel card-gradient" action="#" method="post">
+            <div class="panel-inner">
+              <label>Name <input name="name" placeholder="Your name"></label>
+              <label>Email <input type="email" name="email" placeholder="you@domain.com"></label>
+              <label>Message <textarea name="message" placeholder="Let's collaborate..."></textarea></label>
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </form>
+
+          <div class="contact-info panel card-gradient">
+            <div class="panel-inner">
+              <p><strong>Email:</strong> <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+              <p><strong>Phone:</strong> 6372774342</p>
+              <p class="socials"><a href="#">GitHub</a> • <a href="#">LinkedIn</a> • <a href="#">X</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Chinmaya Rout — Data Analyst</small>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
