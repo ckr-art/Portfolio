@@ -1,59 +1,40 @@
-// theme toggle, skill animations, smooth scroll, year
-(function(){
-  const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
-  const yearEl = document.getElementById('year');
-
-  // persist theme
-  function setTheme(theme){
-    if(theme === 'light') root.setAttribute('data-theme', 'light');
-    else root.removeAttribute('data-theme');
-    try{ localStorage.setItem('theme', theme || 'dark'); } catch(e){}
-  }
-  try {
-    const saved = localStorage.getItem('theme');
-    if(saved === 'light') setTheme('light');
-    else setTheme('dark');
-  } catch(e) { setTheme('dark'); }
-
-  if(toggle) toggle.addEventListener('click', ()=>{
-    const cur = root.getAttribute('data-theme');
-    if(cur === 'light') setTheme('dark');
-    else setTheme('light');
-  });
-
-  if(yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // animate skill bars when scrolled into view
-  const bars = document.querySelectorAll('.bar');
-  function animateBars(){
-    bars.forEach(b => {
-      const v = parseInt(b.getAttribute('data-value') || 0, 10);
-      const fill = b.querySelector('.fill');
-      if(fill) fill.style.width = v + '%';
-    });
-  }
-  if(bars.length){
-    const obs = new IntersectionObserver((entries, obsr) => {
-      entries.forEach(e => {
-        if(e.isIntersecting){
-          animateBars();
-          obsr.disconnect();
-        }
+// ===== Smooth Scroll for Anchor Links =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 60,
+        behavior: "smooth"
       });
-    }, {threshold: 0.25});
-    obs.observe(bars[0]);
-  }
-
-  // smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', e=>{
-      const href = a.getAttribute('href');
-      if(!href || href === '#') return;
-      const target = document.querySelector(href);
-      if(!target) return;
-      e.preventDefault();
-      target.scrollIntoView({behavior:'smooth', block:'start'});
-    });
+    }
   });
-})();
+});
+
+// ===== Scroll Reveal Animations =====
+const revealElements = document.querySelectorAll("section, .project-card, .exp-card, .skill-card");
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  revealElements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) {
+      el.classList.add("show");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+// ===== Profile Picture Pulse Effect (extra touch) =====
+const profilePic = document.querySelector(".profile-pic");
+if (profilePic) {
+  profilePic.addEventListener("mouseenter", () => {
+    profilePic.style.filter = "drop-shadow(0 0 15px #58a6ff)";
+  });
+  profilePic.addEventListener("mouseleave", () => {
+    profilePic.style.filter = "none";
+  });
+}
