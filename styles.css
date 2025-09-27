@@ -53,18 +53,17 @@ body{
 /* HERO */
 .hero{margin-top:16px}
 .hero-inner{display:flex;gap:18px;align-items:stretch}
-.hero-left{width:220px;display:flex;flex-direction:column;gap:12px;align-items:center}
+.hero-left{width:200px;display:flex;flex-direction:column;gap:12px;align-items:center}
 .photo-wrap{
   position:relative;
-  width:168px;
-  height:168px;
+  width:140px;   /* reduced from 168px */
+  height:140px;  /* reduced from 168px */
   border-radius:12px;
   display:flex;
   align-items:center;
   justify-content:center;
   transition:transform .35s cubic-bezier(.2,.9,.2,1);
   will-change:transform;
-  /* a small background to blend with page while the animated ring sits outside */
   background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
   padding:6px;
   overflow:visible;
@@ -91,8 +90,8 @@ body{
 
 /* actual profile image — smaller and crisp */
 .profile-img{
-  width:128px;    /* reduced from 156px */
-  height:128px;   /* reduced from 156px */
+  width:120px;   /* reduced from 128px */
+  height:120px;  /* reduced from 128px */
   border-radius:10px;
   object-fit:cover;
   border:2px solid rgba(0,0,0,0.35);
