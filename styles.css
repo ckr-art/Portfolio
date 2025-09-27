@@ -89,8 +89,17 @@ body{
 .photo-wrap:hover{transform:translateY(-6px) rotateX(6deg) scale(1.02)}
 .photo-wrap:hover::before{filter:blur(6px);opacity:1}
 
-/* profile image sits above the ring */
-.profile-img{width:156px;height:156px;border-radius:10px;object-fit:cover;border:2px solid rgba(0,0,0,0.35);position:relative;z-index:2;display:block;}
+/* actual profile image — smaller and crisp */
+.profile-img{
+  width:128px;    /* reduced from 156px */
+  height:128px;   /* reduced from 156px */
+  border-radius:10px;
+  object-fit:cover;
+  border:2px solid rgba(0,0,0,0.35);
+  position:relative;
+  z-index:2;
+  display:block;
+}
 
 /* contact compact */
 .contact-compact{color:var(--muted);text-align:center;font-size:14px}
@@ -132,7 +141,11 @@ body{
 
 .footer{text-align:center;margin-top:22px;color:var(--muted)}
 .centered{text-align:center}
-.profile-sm{width:120px;border-radius:8px}
+/* other small profile used elsewhere */
+.profile-sm{
+  width:100px;    /* reduced from 120px */
+  border-radius:8px;
+}
 
 /* light theme */
 :root[data-theme="light"]{
@@ -144,10 +157,10 @@ body{
   color:#051021;
 }
 
-/* responsive */
-@media (max-width:920px){
-  .hero-inner{flex-direction:column;align-items:center}
-  .hero-left{width:100%}
-  .about-grid{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr}
+/* Responsive tweaks: ensure image stays proportional on small screens */
+@media (max-width:480px){
+  .photo-wrap{ width:110px; height:110px; }
+  .photo-wrap::before{ inset:-5px; }
+  .profile-img{ width:100px; height:100px; }
+  .profile-sm{ width:84px; }
 }
