@@ -10,6 +10,7 @@
   --ui:'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }
 
+/* reset / base */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -54,10 +55,12 @@ body{
 .hero{margin-top:16px}
 .hero-inner{display:flex;gap:18px;align-items:stretch}
 .hero-left{width:200px;display:flex;flex-direction:column;gap:12px;align-items:center}
+
+/* Photo wrapper (glowing ring + hover) */
 .photo-wrap{
   position:relative;
-  width:140px;   /* reduced from 168px */
-  height:140px;  /* reduced from 168px */
+  width:140px;   /* container width */
+  height:140px;  /* container height */
   border-radius:12px;
   display:flex;
   align-items:center;
@@ -88,16 +91,40 @@ body{
 .photo-wrap:hover{transform:translateY(-6px) rotateX(6deg) scale(1.02)}
 .photo-wrap:hover::before{filter:blur(6px);opacity:1}
 
-/* actual profile image — fixed smaller size */
-.profile-img{
-  width:120px;   /* reduced from 128px */
-  height:120px;  /* reduced from 128px */
-  border-radius:10px;
-  object-fit:cover;
+/* ---------- IMAGE SIZING FIX ---------- */
+/* Target both class names used historically: .profile-img and .profile-pic.
+   This makes the image fill the wrapper and keeps correct aspect and crispness.
+   No HTML changes required. */
+
+/* If image is inside .photo-wrap, make it fully fit the container */
+.photo-wrap img,
+.photo-wrap .profile-pic,
+.photo-wrap .profile-img {
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;      /* crop to cover nicely */
+  border-radius:10px;    /* slightly rounded square (change to 50% for circle) */
   border:2px solid rgba(0,0,0,0.35);
   position:relative;
   z-index:2;
+}
+
+/* If image is used standalone (not wrapped), these rules apply */
+.profile-pic,
+.profile-img {
+  width:120px;           /* final visual size when used alone */
+  height:120px;
   display:block;
+  object-fit:cover;
+  border-radius:10px;
+  border:2px solid rgba(0,0,0,0.35);
+}
+
+/* smaller thumbnail versions used elsewhere */
+.profile-sm{
+  width:90px;
+  border-radius:8px;
 }
 
 /* contact compact */
@@ -140,11 +167,6 @@ body{
 
 .footer{text-align:center;margin-top:22px;color:var(--muted)}
 .centered{text-align:center}
-/* other small profile used elsewhere */
-.profile-sm{
-  width:90px;    /* reduced from 100px */
-  border-radius:8px;
-}
 
 /* light theme */
 :root[data-theme="light"]{
@@ -156,10 +178,16 @@ body{
   color:#051021;
 }
 
-/* Responsive tweaks: ensure image stays proportional on small screens */
+/* responsiveness */
+@media (max-width:920px){
+  .hero-inner{flex-direction:column;align-items:center}
+  .hero-left{width:100%}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
 @media (max-width:480px){
   .photo-wrap{ width:110px; height:110px; }
   .photo-wrap::before{ inset:-5px; }
-  .profile-img{ width:96px; height:96px; }
+  .profile-pic, .profile-img { width:96px; height:96px; }
   .profile-sm{ width:72px; }
 }
