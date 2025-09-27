@@ -1,96 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chinmaya Rout | Data Analyst Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chinmaya Rout — Data Analyst | ML &amp; Cloud Enthusiast</title>
+  <meta name="description" content="Chinmaya Rout — Data Analyst. Portfolio: projects, skills, experience, and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="profile-pic-container">
-        <img src="assets/images/chinmaya-profile.png" alt="Chinmaya Rout" class="profile-pic">
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">CR</div>
+        <div class="name">Chinmaya Rout</div>
+        <div class="title">Data Analyst | ML &amp; Cloud Enthusiast</div>
       </div>
-      <h1>Chinmaya Rout</h1>
-      <h2>Data Analyst | ML & Cloud Enthusiast</h2>
-      <p>Experienced Data Analyst with 4 years of expertise in analytics, visualization, cloud, and ML. Delivering actionable insights through data-driven solutions.</p>
-      <div class="cta-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="assets/resume/Chinmaya-Rout-Resume.pdf" class="btn" download>Download Resume</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== SKILLS SECTION ===== -->
-  <section class="skills">
-    <h2>Skills & Tech Stack</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><h3>Languages</h3><p>Python, SQL, R</p></div>
-      <div class="skill-card"><h3>Data Science</h3><p>Scikit-learn, TensorFlow, Keras, Machine Learning</p></div>
-      <div class="skill-card"><h3>Tools</h3><p>Tableau, Power BI, Advanced Excel, Google Sheets, Informatica</p></div>
-      <div class="skill-card"><h3>Cloud</h3><p>Azure (Data Factory, Synapse, Databricks), Snowflake</p></div>
-      <div class="skill-card"><h3>Big Data</h3><p>Hadoop, Hive, Spark, Kafka</p></div>
-      <div class="skill-card"><h3>Databases</h3><p>Oracle, MySQL</p></div>
-      <div class="skill-card"><h3>NLP & Web Scraping</h3><p>NLTK, BeautifulSoup, Scrapy</p></div>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE SECTION ===== -->
-  <section class="experience">
-    <h2>Professional Experience</h2>
-    <div class="exp-card">
-      <h3>Data Analyst | Wipro Technologies</h3>
-      <span>Jan 2022 – Present | Hyderabad, India</span>
-      <ul>
-        <li>Automated ETL workflows using Python, SQL, and Snowflake, boosting efficiency of data pipelines.</li>
-        <li>Built Power BI/Tableau dashboards for KPIs, enabling real-time insights for leadership.</li>
-        <li>Conducted predictive analytics to improve conversions and forecast sales trends.</li>
-      </ul>
-    </div>
-    <div class="exp-card">
-      <h3>Fraud Risk Analyst | Tech Mahindra</h3>
-      <span>May 2021 – Dec 2021 | Bhubaneswar, India</span>
-      <ul>
-        <li>Supported Amazon’s fraud monitoring operations, reducing incidents with deep transaction analysis.</li>
-        <li>Automated workflows and risk reporting, improving efficiency and compliance.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>E-Commerce Customer Retention Analytics</h3>
-        <p>Designed ETL pipelines and demand forecasting with Python & SQL, delivering dashboards that improved retention by 15%.</p>
-        <span class="tags">Python | SQL | Power BI</span>
+      <div class="actions">
+        <button id="theme-toggle" class="icon" aria-label="Toggle theme">🌗</button>
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="assets/Chinmaya_Rout_Resume.pdf" id="download-resume" download>Download Resume</a>
       </div>
-      <div class="project-card">
-        <h3>Healthcare Readmission Analysis</h3>
-        <p>Analyzed patient data and developed predictive models with SQL & Python to optimize hospital resource allocation.</p>
-        <span class="tags">Python | SQL | Machine Learning</span>
-      </div>
-      <div class="project-card">
-        <h3>Financial Credit Risk Scoring</h3>
-        <p>Processed loan datasets with scikit-learn to build risk scoring models, improving loan approval accuracy by 12%.</p>
-        <span class="tags">Python | Scikit-learn | Data Visualization</span>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <footer class="footer">
-    <h2>Connect With Me</h2>
-    <div class="social-links">
-      <a href="mailto:chinmayackr@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190">LinkedIn</a>
-      <a href="https://github.com/ckr-art">GitHub</a>
-    </div>
-    <p>© 2025 Chinmaya Rout</p>
-  </footer>
+    <header class="hero" id="home">
+      <div class="hero-inner card-gradient">
+        <div class="panel-inner hero-left">
+          <div class="photo-wrap" aria-hidden="true">
+            <img src="assets/profile.png" alt="Chinmaya Rout — profile photo" class="profile-img" />
+          </div>
+          <div class="contact-compact">
+            <p class="loc">Hyderabad, India</p>
+            <p><a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+            <p>6372774342</p>
+            <p><a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/ckr-art" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </div>
+
+        <div class="panel-inner hero-right">
+          <h1 class="headline">I turn messy data into clear, actionable decisions.</h1>
+          <p class="subhead">Experienced and detail-oriented Data Analyst with 4 years of experience in analytics, visualization and ML-driven solutions.</p>
+          <div class="ctas">
+            <a class="cta" href="#projects">View Projects</a>
+            <a class="cta ghost" href="#contact">Contact</a>
+          </div>
+          <p class="mini-summary">
+            Adept at Python, SQL, Power BI and cloud data engineering (Azure &amp; Snowflake). I build reproducible ETL pipelines, insightful dashboards and predictive models that drive business outcomes.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills &amp; Tech Stack</h2>
+        <div class="grid">
+
+          <!-- Programming / Languages -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Programming &amp; Languages</h3>
+              <ul class="score-list">
+                <li>Python <span class="score">95</span>
+                  <div class="bar" data-value="95"><div class="fill"></div></div>
+                </li>
+                <li>SQL <span class="score">90</span>
+                  <div class="bar" data-value="90"><div class="fill"></div></div>
+                </li>
+                <li>R <span class="score">60</span>
+                  <div class="bar" data-value="60"><div class="fill"></div></div>
+                </li>
+                <li>Go <span class="score">55</span>
+                  <div class="bar" data-value="55"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Data Science / ML -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Data Science &amp; ML</h3>
+              <ul class="score-list">
+                <li>scikit-learn <span class="score">85</span>
+                  <div class="bar" data-value="85"><div class="fill"></div></div>
+                </li>
+                <li>TensorFlow <span class="score">60</span>
+                  <div class="bar" data-value="60"><div class="fill"></div></div>
+                </li>
+                <li>Keras <span class="score">60</span>
+                  <div class="bar" data-value="60"><div class="fill"></div></div>
+                </li>
+                <li>Machine Learning (general) <span class="score">80</span>
+                  <div class="bar" data-value="80"><div class="fill"></div></div>
+                </li>
+                <li>Pandas / NumPy <span class="score">95</span>
+                  <div class="bar" data-value="95"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Tools &amp; Visualization</h3>
+              <ul class="score-list">
+                <li>Power BI <span class="score">90</span>
+                  <div class="bar" data-value="90"><div class="fill"></div></div>
+                </li>
+                <li>Tableau <span class="score">80</span>
+                  <div class="bar" data-value="80"><div class="fill"></div></div>
+                </li>
+                <li>Advanced Excel <span class="score">88</span>
+                  <div class="bar" data-value="88"><div class="fill"></div></div>
+                </li>
+                <li>Google Sheets <span class="score">85</span>
+                  <div class="bar" data-value="85"><div class="fill"></div></div>
+                </li>
+                <li>Informatica <span class="score">55</span>
+                  <div class="bar" data-value="55"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cloud & Big Data -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Cloud &amp; Big Data</h3>
+              <ul class="score-list">
+                <li>Azure (Data Factory, Synapse, Databricks) <span class="score">75</span>
+                  <div class="bar" data-value="75"><div class="fill"></div></div>
+                </li>
+                <li>Snowflake <span class="score">70</span>
+                  <div class="bar" data-value="70"><div class="fill"></div></div>
+                </li>
+                <li>Hadoop <span class="score">55</span>
+                  <div class="bar" data-value="55"><div class="fill"></div></div>
+                </li>
+                <li>Hive / Spark <span class="score">55</span>
+                  <div class="bar" data-value="55"><div class="fill"></div></div>
+                </li>
+                <li>Kafka <span class="score">50</span>
+                  <div class="bar" data-value="50"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Databases & Dev -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Databases &amp; Dev</h3>
+              <ul class="score-list">
+                <li>Oracle <span class="score">68</span>
+                  <div class="bar" data-value="68"><div class="fill"></div></div>
+                </li>
+                <li>MySQL <span class="score">72</span>
+                  <div class="bar" data-value="72"><div class="fill"></div></div>
+                </li>
+                <li>Git / VS Code <span class="score">95</span>
+                  <div class="bar" data-value="95"><div class="fill"></div></div>
+                </li>
+                <li>Figma (basic) <span class="score">50</span>
+                  <div class="bar" data-value="50"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NLP & Web Scraping -->
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>NLP &amp; Web Scraping</h3>
+              <ul class="score-list">
+                <li>NLTK <span class="score">60</span>
+                  <div class="bar" data-value="60"><div class="fill"></div></div>
+                </li>
+                <li>BeautifulSoup <span class="score">75</span>
+                  <div class="bar" data-value="75"><div class="fill"></div></div>
+                </li>
+                <li>Scrapy <span class="score">65</span>
+                  <div class="bar" data-value="65"><div class="fill"></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item card-gradient">
+            <div class="panel-inner">
+              <div class="meta">Jan 2022 — Present</div>
+              <h3>Data Analyst — Wipro Technologies (Hyderabad)</h3>
+              <ul>
+                <li>Automated data workflows using Python, SQL and Snowflake — optimized ETL, models and cloud warehouse performance.</li>
+                <li>Built interactive Power BI and Tableau dashboards to track KPIs and enable leadership decisions.</li>
+                <li>Applied predictive modeling and A/B testing to improve conversion and forecast sales trends.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item card-gradient">
+            <div class="panel-inner">
+              <div class="meta">May 2021 — Dec 2021</div>
+              <h3>Fraud Risk Analyst — Tech Mahindra (Bhubaneswar)</h3>
+              <ul>
+                <li>Analyzed transaction data and supported fraud detection operations for Amazon services.</li>
+                <li>Built automation to streamline risk-monitoring workflows and mentored junior analysts.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects (links removed as requested) -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects">
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+              <h4>E-Commerce Customer Retention Analytics</h4>
+              <p>Built ETL pipelines and demand-forecasting models using SQL &amp; Python. Delivered Power BI dashboards that helped increase customer retention by ~15%.</p>
+              <p class="meta-tech">Tech: Python, Pandas, SQL, Power BI, Snowflake</p>
+            </div>
+          </div>
+
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>Python</span><span>scikit-learn</span></div>
+              <h4>Healthcare Readmission Analysis</h4>
+              <p>Prepared and modeled patient admission data to predict readmission risk; created dashboards to improve resource allocation and reduce readmission rates.</p>
+              <p class="meta-tech">Tech: Python, scikit-learn, SQL, Tableau</p>
+            </div>
+          </div>
+
+          <div class="project-card card-gradient">
+            <div class="panel-inner">
+              <div class="badges"><span>Python</span><span>ML</span></div>
+              <h4>Financial Credit Risk Scoring</h4>
+              <p>Processed loan datasets and built risk scoring models that improved loan-approval accuracy and reporting. Created dashboards for risk teams.</p>
+              <p class="meta-tech">Tech: Python, scikit-learn, pandas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Certs -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education &amp; Certifications</h2>
+        <div class="grid">
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>B.Tech — Mechanical &amp; Automation Engineering</h3>
+              <p>DRIEMS University — Cuttack, India</p>
+              <p>Aug 2018 — Apr 2021 | CGPA: 8.78</p>
+            </div>
+          </div>
+
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <h3>Certifications</h3>
+              <ul>
+                <li>Python for Data Science &amp; Machine Learning</li>
+                <li>Google Cloud — Professional Generative AI Engineer</li>
+                <li>DP-203: Microsoft Azure Data Engineer Associate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Awards -->
+      <section id="about" class="section">
+        <h2 class="section-title">About &amp; Awards</h2>
+        <div class="about-grid">
+          <div class="panel card-gradient">
+            <div class="panel-inner">
+              <p>I'm passionate about building reproducible data pipelines, actionable dashboards and ML solutions that are maintainable and deliver measurable value. I prefer pragmatic approaches that scale and collaborate closely with stakeholders to drive results.</p>
+              <p><strong>Awards:</strong> Best Performer Award | Wipro (2023)</p>
+            </div>
+          </div>
+
+          <div class="panel card-gradient">
+            <div class="panel-inner centered">
+              <img class="profile-sm" src="assets/profile.png" alt="Chinmaya Rout photo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form class="contact-form panel card-gradient" action="#" method="post">
+            <div class="panel-inner">
+              <label>Name <input name="name" placeholder="Your name"></label>
+              <label>Email <input type="email" name="email" placeholder="you@domain.com"></label>
+              <label>Message <textarea name="message" placeholder="Let's collaborate..."></textarea></label>
+              <button class="btn" type="submit">Send message</button>
+            </div>
+          </form>
+
+          <div class="contact-info panel card-gradient">
+            <div class="panel-inner">
+              <p><strong>Email:</strong> <a href="mailto:chinmayackr@gmail.com">chinmayackr@gmail.com</a></p>
+              <p><strong>Phone:</strong> 6372774342</p>
+              <p class="socials"><a href="https://github.com/ckr-art" target="_blank" rel="noopener">GitHub</a> • <a href="https://www.linkedin.com/in/chinmaya-rout-9a1a12190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Chinmaya Rout — Data Analyst</small>
+    </footer>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
